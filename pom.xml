@@ -9,6 +9,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>23</maven.compiler.release>
         <exec.mainClass>com.mycompany.sqa.Sqa</exec.mainClass>
+        <sonar.organization>svnsyakilla-art</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.projectKey>svnsyakilla-art_Tugas-SQA-</sonar.projectKey>
     </properties>
     <dependencies>
         <dependency>

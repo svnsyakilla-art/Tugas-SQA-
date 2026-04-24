@@ -16,20 +16,19 @@ public class BankAccountTest {
     void testDepositBerhasil() {
         BankAccount account = new BankAccount(1000);
         account.deposit(500);
-        assertEquals(1500, account.getSaldo()); // Memastikan saldo bertambah [cite: 98]
+        assertEquals(1500, account.getSaldo()); 
     }
 
     @Test
     void testWithdrawBerhasil() {
         BankAccount account = new BankAccount(1000);
         account.withdraw(400);
-        assertEquals(600, account.getSaldo()); // Memastikan saldo berkurang [cite: 99]
+        assertEquals(600, account.getSaldo()); 
     }
 
     @Test
     void testWithdrawGagal() {
         BankAccount account = new BankAccount(100);
-        // Memastikan exception muncul saat saldo tidak cukup [cite: 96, 100]
         assertThrows(ArithmeticException.class, () -> {
             account.withdraw(500);
         });
